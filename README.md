@@ -1,2 +1,2 @@
-# docker_ubuntu_sshd
+# docker-ubuntu-sshd
 Ubuntu Docker image with SSH
