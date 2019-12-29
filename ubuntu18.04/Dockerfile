@@ -14,8 +14,8 @@ RUN mkdir /run/sshd;\
 RUN { \
     echo '#!/bin/bash -eu'; \
     echo 'echo "root:${ROOT_PASSWORD}" | chpasswd'; \
-    echo 'mkdir /ssh'; \
-    echo 'cp /etc/ssh/sshd_config /ssh/sshd_config'; \
+    echo 'mkdir /test'; \
+    echo 'cp /etc/ssh/sshd_config /test/sshd_config'; \
     echo 'exec "$@"'; \
     } > /usr/local/bin/entry_point.sh; \
     chmod +x /usr/local/bin/entry_point.sh;
@@ -26,7 +26,7 @@ ENV TZ Asia/Tokyo
 
 ENV ROOT_PASSWORD root
 
-VOLUME /ssh
+VOLUME /test
 
 EXPOSE 22
 
