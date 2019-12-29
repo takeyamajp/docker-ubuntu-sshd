@@ -6,7 +6,7 @@ RUN mkdir /run/sshd;\
     apt update;\
     apt install -y openssh-server; \
     sed -i 's/^#?\(PermitRootLogin\s+\).*/\1 yes/' /etc/ssh/sshd_config;\
-    sed -i 's/\(UsePAM yes\)/# \1/' /etc/ssh/sshd_config; \
+    sed -i 's/^\(UsePAM\s+yes\)/# \1/' /etc/ssh/sshd_config; \
     apt clean;
 
 # entrypoint
