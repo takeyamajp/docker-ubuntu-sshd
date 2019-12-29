@@ -3,6 +3,7 @@ MAINTAINER "Hiroki Takeyama"
 
 # sshd
 RUN mkdir /run/sshd;\
+    mkdir /root/.ssh;\
     apt update;\
     apt install -y openssh-server; \
     sed -i 's/^\(UsePAM\s+yes\)/# \1/' /etc/ssh/sshd_config; \
