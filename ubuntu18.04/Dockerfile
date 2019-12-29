@@ -2,7 +2,8 @@ FROM ubuntu:18.04
 MAINTAINER "Hiroki Takeyama"
 
 # sshd
-RUN apt install -y openssh-server; \
+RUN apt-get update;\
+    apt install -y openssh-server; \
     sed -ri 's/\(UsePAM yes\)/#\1/g' /etc/ssh/sshd_config; \
     ssh-keygen -q -t rsa -b 2048 -f /etc/ssh/ssh_host_rsa_key -N '' && \
     ssh-keygen -q -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key -N '' && \
