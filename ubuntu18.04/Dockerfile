@@ -14,7 +14,6 @@ RUN mkdir /run/sshd;\
 RUN { \
     echo '#!/bin/bash -eu'; \
     echo 'echo "root:${ROOT_PASSWORD}" | chpasswd'; \
-    echo 'mkdir /test'; \
     echo 'cp /etc/ssh/sshd_config /test/sshd_config'; \
     echo 'exec "$@"'; \
     } > /usr/local/bin/entry_point.sh; \
