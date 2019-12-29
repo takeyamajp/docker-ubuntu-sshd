@@ -21,7 +21,6 @@ RUN { \
     chmod +x /usr/local/bin/entry_point.sh;
 ENTRYPOINT ["entry_point.sh"]
 
-# timezone
 ENV TZ Asia/Tokyo
 
 ENV ROOT_PASSWORD root
