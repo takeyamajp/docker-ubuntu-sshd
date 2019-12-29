@@ -2,8 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER "Hiroki Takeyama"
 
 # sshd
-RUN mkdir /run/sshd;\
-    apt update && apt install -y openssh-server; \
+RUN apt update && apt install -y openssh-server; \
     sed -i 's/^\(PermitRootLogin\s*\).*/\1 yes/' /etc/ssh/sshd_config;\
     apt clean;
 
