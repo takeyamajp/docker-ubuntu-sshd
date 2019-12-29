@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER "Hiroki Takeyama"
 
 # timezone
-RUN apt update && install -y tzdata;
+RUN apt update && apt install -y tzdata;
 
 # sshd
 RUN mkdir /run/sshd; \
