@@ -3,7 +3,8 @@ MAINTAINER "Hiroki Takeyama"
 
 # timezone
 RUN export DEBIAN_FRONTEND=noninteractive; \
-    apt update && apt install -y tzdata;
+    apt update && apt install -y tzdata; \
+    export -n DEBIAN_FRONTEND;
 
 # sshd
 RUN mkdir /run/sshd; \
