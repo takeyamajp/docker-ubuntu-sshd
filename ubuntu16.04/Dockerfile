@@ -1,9 +1,12 @@
 FROM ubuntu:16.04
 MAINTAINER "Hiroki Takeyama"
 
+# timezone
+RUN apt update && install -y tzdata;
+
 # sshd
 RUN mkdir /var/run/sshd; \
-    apt update && apt install -y openssh-server; \
+    apt install -y openssh-server; \
     sed -i 's/^\(PermitRootLogin\s*\).*/\1 yes/' /etc/ssh/sshd_config; \
     apt clean;
 
@@ -18,7 +21,6 @@ RUN { \
     chmod +x /usr/local/bin/entry_point.sh;
 ENTRYPOINT ["entry_point.sh"]
 
-# timezone
 ENV TZ Asia/Tokyo
 
 ENV ROOT_PASSWORD root
