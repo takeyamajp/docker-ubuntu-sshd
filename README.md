@@ -1,4 +1,4 @@
-# docker-ubuntu-sshd
+# ubuntu-sshd
 [![Docker Stars](https://img.shields.io/docker/stars/takeyamajp/ubuntu-sshd.svg)](https://hub.docker.com/r/takeyamajp/ubuntu-sshd/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/takeyamajp/ubuntu-sshd.svg)](https://hub.docker.com/r/takeyamajp/ubuntu-sshd/)
 [![license](https://img.shields.io/github/license/takeyamajp/docker-ubuntu-sshd.svg)](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/LICENSE)
