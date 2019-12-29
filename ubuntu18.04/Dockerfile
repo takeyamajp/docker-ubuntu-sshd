@@ -1,6 +1,9 @@
 FROM ubuntu:18.04
 MAINTAINER "Hiroki Takeyama"
 
+# timezone
+RUN apt update && install -y tzdata;
+
 # sshd
 RUN mkdir /run/sshd; \
     apt update && apt install -y openssh-server; \
@@ -10,6 +13,8 @@ RUN mkdir /run/sshd; \
 # entrypoint
 RUN { \
     echo '#!/bin/bash -eu'; \
+    echo 'rm -f /etc/localtime'; \
+    echo 'ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime'; \
     echo 'echo "root:${ROOT_PASSWORD}" | chpasswd'; \
     echo 'exec "$@"'; \
     } > /usr/local/bin/entry_point.sh; \
