@@ -2,7 +2,8 @@ FROM ubuntu:18.04
 MAINTAINER "Hiroki Takeyama"
 
 # timezone
-RUN apt update && DEBIAN_FRONTEND=noninteractive && apt install -y tzdata;
+RUN export DEBIAN_FRONTEND=noninteractive; \
+    apt update && apt install -y tzdata;
 
 # sshd
 RUN mkdir /run/sshd; \
