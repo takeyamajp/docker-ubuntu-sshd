@@ -11,7 +11,6 @@
     FROM ubuntu:18.04  
     MAINTAINER "Hiroki Takeyama"
     
-    # timezone  
     ENV TZ Asia/Tokyo
     
     ENV ROOT_PASSWORD root
