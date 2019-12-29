@@ -5,6 +5,7 @@
 
 ### Supported tags and respective Dockerfile links  
 - [`latest`, `ubuntu18.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu18.04/Dockerfile)
+- [`ubuntu16.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu16.04/Dockerfile)
 
 ### Image summary
     FROM ubuntu:18.04  
