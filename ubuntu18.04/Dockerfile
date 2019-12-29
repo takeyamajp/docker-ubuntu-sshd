@@ -3,7 +3,6 @@ MAINTAINER "Hiroki Takeyama"
 
 # sshd
 RUN mkdir /run/sshd;\
-    mkdir /root/.ssh;\
     apt update;\
     apt install -y openssh-server; \
     sed -i 's/^#\(PermitRootLogin\s*\).*/\1 yes/' /etc/ssh/sshd_config;\
