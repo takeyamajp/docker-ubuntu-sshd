@@ -5,7 +5,8 @@ MAINTAINER "Hiroki Takeyama"
 RUN mkdir /run/sshd;\
     apt update;\
     apt install -y openssh-server; \
-    sed -ri 's/^\(UsePAM yes\)/#\1/g' /etc/ssh/sshd_config; \
+    sed -i 's/^#?\(PermitRootLogin\s+\).*/\1 yes/' /etc/ssh/sshd_config;\
+    sed -i 's/\(UsePAM yes\)/# \1/g' /etc/ssh/sshd_config; \
     apt clean;
 
 # entrypoint
