@@ -8,7 +8,7 @@ RUN apt update && apt install -y tzdata; \
 # sshd
 RUN mkdir /var/run/sshd; \
     apt install -y openssh-server; \
-    sed -i 's/^\(PermitRootLogin\s*\).*/\1yes/' /etc/ssh/sshd_config; \
+    sed -i 's/^\(PermitRootLogin\)\ .*/\1 yes/' /etc/ssh/sshd_config; \
     sed -i 's/^\(UsePAM yes\)/# \1/' /etc/ssh/sshd_config; \
     apt clean;
 
