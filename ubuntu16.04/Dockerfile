@@ -20,7 +20,6 @@ RUN { \
     echo 'exec "$@"'; \
     } > /usr/local/bin/entry_point.sh; \
     chmod +x /usr/local/bin/entry_point.sh;
-ENTRYPOINT ["entry_point.sh"]
 
 ENV TZ Asia/Tokyo
 
@@ -28,4 +27,5 @@ ENV ROOT_PASSWORD root
 
 EXPOSE 22
 
+ENTRYPOINT ["entry_point.sh"]
 CMD    ["/usr/sbin/sshd", "-D"]
