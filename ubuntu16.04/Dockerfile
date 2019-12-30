@@ -15,7 +15,6 @@ RUN mkdir /var/run/sshd; \
 # entrypoint
 RUN { \
     echo '#!/bin/bash -eu'; \
-    echo 'rm -f /etc/localtime'; \
     echo 'ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime'; \
     echo 'echo "root:${ROOT_PASSWORD}" | chpasswd'; \
     echo 'exec "$@"'; \
