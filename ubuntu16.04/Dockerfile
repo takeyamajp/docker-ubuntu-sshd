@@ -28,4 +28,4 @@ ENV ROOT_PASSWORD root
 EXPOSE 22
 
 ENTRYPOINT ["entry_point.sh"]
-CMD    ["/usr/sbin/sshd", "-D"]
+CMD    ["/usr/sbin/sshd", "-D", "-e"]
