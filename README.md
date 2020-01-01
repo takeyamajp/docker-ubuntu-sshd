@@ -47,4 +47,4 @@ This container logs the beginning, authentication, and termination of each conne
 
 Use the following command to view the logs in real time.
 
-    docker logs -f postfix
+    docker logs -f ubuntu-sshd
