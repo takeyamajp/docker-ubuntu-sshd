@@ -43,7 +43,7 @@ See below for zones.
 https://www.unicode.org/cldr/charts/latest/verify/zones/en.html
 
 ## Logging
-This container logs the beginning, authentication, and termination of each connection.
+This container logs the beginning, authentication, and termination of each connection.  
 Use the following command to view the logs in real time.
 
     docker logs -f ubuntu-sshd
