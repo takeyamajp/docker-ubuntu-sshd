@@ -16,3 +16,12 @@
     ENV ROOT_PASSWORD root
     
     EXPOSE 22
+
+## How to use
+This container can be accessed by SSH and SFTP clients.
+
+    docker run -d --name ubuntu-sshd \  
+           -e TIMEZONE=Asia/Tokyo \  
+           -e ROOT_PASSWORD=root \  
+           -p 8023:22 \  
+           takeyamajp/ubuntu-sshd
