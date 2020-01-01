@@ -26,7 +26,7 @@ This container can be accessed by SSH and SFTP clients.
            -p 8022:22 \  
            takeyamajp/ubuntu-sshd
 
-You can add additional export ports and volumes as follows if you want.
+You can add extra ports and volumes as follows if you want.
 
     docker run -d --name ubuntu-sshd \  
            -e TZ=Asia/Tokyo \  
