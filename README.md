@@ -25,3 +25,16 @@ This container can be accessed by SSH and SFTP clients.
            -e ROOT_PASSWORD=root \  
            -p 8023:22 \  
            takeyamajp/ubuntu-sshd
+
+## Timezone
+You can use any time zone that can be used in Ubuntu such as America/Chicago.  
+
+See below for zones.  
+https://www.unicode.org/cldr/charts/latest/verify/zones/en.html
+
+## Logging
+This container logs the beginning, authentication, and termination of each connection.
+
+Use the following command to view the logs in real time.
+
+    docker logs -f postfix
