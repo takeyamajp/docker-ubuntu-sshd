@@ -26,6 +26,16 @@ This container can be accessed by SSH and SFTP clients.
            -p 8023:22 \  
            takeyamajp/ubuntu-sshd
 
+You can add additional export ports and volumes as follows if you want.
+
+    docker run -d --name ubuntu-sshd \  
+           -e TIMEZONE=Asia/Tokyo \  
+           -e ROOT_PASSWORD=root \  
+           -p 8023:22 \  
+           -p 8080:80 \  
+           -v /my/own/datadir:/var/www/html \  
+           takeyamajp/ubuntu-sshd
+
 ## Timezone
 You can use any time zone that can be used in Ubuntu such as America/Chicago.  
 
