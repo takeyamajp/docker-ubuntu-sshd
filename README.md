@@ -3,11 +3,11 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/takeyamajp/ubuntu-sshd.svg)](https://hub.docker.com/r/takeyamajp/ubuntu-sshd/)
 [![license](https://img.shields.io/github/license/takeyamajp/docker-ubuntu-sshd.svg)](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/LICENSE)
 
-### Supported tags and respective Dockerfile links  
+## Supported tags and respective Dockerfile links  
 - [`latest`, `ubuntu18.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu18.04/Dockerfile)
 - [`ubuntu16.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu16.04/Dockerfile)
 
-### Image summary
+## Image summary
     FROM ubuntu:18.04  
     MAINTAINER "Hiroki Takeyama"
     
@@ -36,7 +36,7 @@ You can add extra ports and volumes as follows if you want.
            -v /my/own/datadir:/var/www/html \  
            takeyamajp/ubuntu-sshd
 
-## Timezone
+## Time zone
 You can use any time zone that can be used in Ubuntu such as America/Chicago.  
 
 See below for zones.  
