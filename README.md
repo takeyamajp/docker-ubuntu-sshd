@@ -37,7 +37,7 @@ You can add extra ports and volumes as follows if you want.
            takeyamajp/ubuntu-sshd
 
 ## Time zone
-You can use any time zone that can be used in Ubuntu such as America/Chicago.  
+You can use any time zone such as America/Chicago that can be used in Ubuntu.  
 
 See below for zones.  
 https://www.unicode.org/cldr/charts/latest/verify/zones/en.html
