@@ -9,7 +9,7 @@
 - [`ubuntu16.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu16.04/Dockerfile)
 
 ## Image summary
-    FROM ubuntu:18.04  
+    FROM ubuntu:20.04  
     MAINTAINER "Hiroki Takeyama"
     
     ENV TZ Asia/Tokyo
