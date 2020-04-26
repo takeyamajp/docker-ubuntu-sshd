@@ -4,7 +4,8 @@
 [![license](https://img.shields.io/github/license/takeyamajp/docker-ubuntu-sshd.svg)](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/LICENSE)
 
 ## Supported tags and respective Dockerfile links  
-- [`latest`, `ubuntu18.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu18.04/Dockerfile)
+- [`latest`, `ubuntu20.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu20.04/Dockerfile)
+- [`ubuntu18.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu18.04/Dockerfile)
 - [`ubuntu16.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu16.04/Dockerfile)
 
 ## Image summary
