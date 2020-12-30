@@ -37,6 +37,10 @@ You can add extra ports and volumes as follows if you want.
            -v /my/own/datadir:/var/www/html \  
            takeyamajp/ubuntu-sshd
 
+SCP command can be used for transferring files.
+
+    scp -P 8022 -r /my/own/httpd.conf root@localhost:/etc/apache2/apache2.conf
+
 ## Time zone
 You can use any time zone such as America/Chicago that can be used in Ubuntu.  
 
