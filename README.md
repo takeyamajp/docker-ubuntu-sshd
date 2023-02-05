@@ -10,6 +10,9 @@ Star this repository if it is useful for you.
 - [`ubuntu18.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu18.04/Dockerfile)
 - [`ubuntu16.04`](https://github.com/takeyamajp/docker-ubuntu-sshd/blob/master/ubuntu16.04/Dockerfile)
 
+ ### Supported architectures: ([`more info`](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
+ `amd64`, `arm64(for Raspberry Pi)`
+
 ## Image summary
     FROM ubuntu:22.04  
     MAINTAINER "Hiroki Takeyama"
